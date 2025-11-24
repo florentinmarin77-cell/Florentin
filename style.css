@@ -1,42 +1,41 @@
+/* Stil general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* foarte deschis spre turcoaz, ca cerul senin */
 }
 
+/* Header fix sus */
 header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a0e7e5; /* albastru deschis turcoaz */
     text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* mic efect de adâncime */
+    z-index: 1000; /* ca să fie deasupra altor elemente */
 }
 
-.menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Linia de demarcare sus */
+.header-line {
+    height: 4px;
+    width: 100%;
+    background-color: #00bcd4; /* linie mai intensă, contrast */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* Titlul site-ului */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
 }
 
-.menu li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-}
-
-h2 {
-    color: #2c3e50;
+/* Main - adăugăm padding ca să nu fie sub header */
+main {
+    padding-top: 70px; /* spațiu egal cu înălțimea header-ului */
 }
