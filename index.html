@@ -41,7 +41,17 @@
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("hidden");
 }
-</script>
 
+// închide meniul când faci click pe o opțiune
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("nav a");
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            document.getElementById("menu").classList.add("hidden");
+        });
+    });
+});
+</script>
+    
 </body>
 </html>
