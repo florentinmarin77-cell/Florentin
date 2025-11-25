@@ -1,102 +1,91 @@
-/* Stil general */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #f5ffff;
 }
 
-/* Header fix */
+/* HEADER */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #a0e7e5;
+    background-color: #b3f0f4; /* azuriu deschis spre turcoaz */
+    padding: 10px 0;
     text-align: center;
-    padding: 15px 0 10px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
-}
-
-.header-line {
-    height: 4px;
-    width: 100%;
-    background-color: #00bcd4;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* Titlu */
 header h1 {
     margin: 0;
     font-size: 22px;
-    color: white;
+    color: #004d55;
     font-weight: bold;
 }
 
 /* n cazut */
 .fallen-n {
     display: inline-block;
-    transform: rotate(20deg) translateY(6px);
-    color: #004d55;
+    transform: rotate(20deg) translateY(5px);
+    color: #00383d;
 }
 
-/* Iconita hamburger */
-.menu-icon {
+/* HAMBURGER */
+.hamburger {
     position: absolute;
     left: 15px;
-    top: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
+    z-index: 2000;
 }
-
-.menu-icon div {
-    width: 25px;
+.hamburger div {
+    width: 28px;
     height: 3px;
     background-color: #004d55;
     margin: 5px 0;
     border-radius: 2px;
 }
 
-/* Meniu dropdown */
+/* DROPDOWN MENU */
 nav {
-    background-color: #b2f2ef;
     width: 100%;
+    background-color: #d7fafc;
+    border-bottom: 2px solid #0097a7;
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #00bcd4;
 }
 
 nav a {
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
     color: #00383d;
     font-size: 18px;
-    display: block;
 }
 
 nav a:hover {
-    background-color: #89e9e2;
+    background-color: #bbf4f7;
 }
 
 .hidden {
     display: none;
 }
 
-/* Banner UNDER CONSTRUCTION */
-.construction-banner {
-    margin-top: 100px;
+/* PAGE UNDER CONSTRUCTION */
+.construction {
+    margin-top: 90px;
     text-align: center;
     font-size: 26px;
     font-weight: bold;
     color: #cc0000;
 }
 
-/* Main content */
+/* MAIN CONTENT */
 main {
     padding: 20px;
-    margin-top: 20px;
     font-size: 18px;
 }
